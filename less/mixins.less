@@ -1,1 +1,18 @@
 // Mixins Here
+.displayFlex(@j, @a){
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+  }
+  
+  .button{
+    padding:10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover{
+      background: grey;
+      transform: scale(1.2);
+    }
+  }

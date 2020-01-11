@@ -1,1 +1,27 @@
 // Navigation code here
+.navigation{
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+    background:  #999999;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    opacity: 0.8;
+    
+    nav{
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 20px;
+      .displayFlex(space-around, center);
+      
+      @media @phone{
+        width: 80%;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+      }
+    }
+  }

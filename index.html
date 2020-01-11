@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -17,12 +17,22 @@
 <body>
 
  <!-- navigation code here -->
-
+  
   <div class="container home">
-
+    <section id ="big-navigation" class="navigation">
+      <h2 id = "big-header">SpaceWalkers</h2>
+      <nav>
+        <a id ="link" href="#">Home</a>
+        <a id ="link1" href="#">About Us</a>
+        <a id ="link2" href="#">Blog</a>
+        <a id ="link3" href="#">Contact</a>
+        <a id ="link4" href="#">Sign In</a>
+      </nav>  
+    </section>  
     <header class="intro">
        <!-- image code here -->
-
+      <img src="img/main-header.png">
+  
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -61,11 +71,58 @@
       </div>
 
     </section>
+    <section class="my-form">
+      <img src="img/form.jpg">
+      <form class='form'>
+        <h2>Subscribe Now!!!</h2>
+        <h3>Name</h3>
+        <div> <input type="text" placeholder="Name"></div>
+         
+        <h3>Email</h3>
+        <div><input type="email" placeholder="Email"></div>
+        
 
+        <h3>Phone</h3>
+        <div><input type="text" placeholder="Phone"></div>
+          
+        <h3>Message</h3>
+        <div><textarea class="message" name="message" placeholder="What else we can do to help?"></textarea></div>
+          
+        <div><input type="submit" value="submit"></div>
+       </form> 
+    </section>
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
 </body>
+<script src="index.js"><</script>
 </html>
+
+<!--
+
+What is the difference between an adaptive website and a fully responsive website?
+
+Adaptive is LESS flexiable than fully responsive website. Responsive website can fit in multiple screen sizes(phones, tablets, pc monitors...)
+
+Describe what it means to be mobile first vs desktop first.
+
+Mobile first: it's when you build website from mobile perspective first.
+
+Desktop first: it's when you build website from desktop perspective first.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+.625
+
+
+How would you describe preprocessing to someone new to CSS?
+
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? 
+
+nesting, variables and mixins are pretty convenience.
+
+Media querries can be a bit much when you have to repeat it multiple times.
+-->

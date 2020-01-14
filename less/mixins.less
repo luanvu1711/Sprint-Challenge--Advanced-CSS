@@ -5,10 +5,10 @@
     align-items: @a;
   }
   
-  .button{
+  .button(@c, @b){
     padding:10px 20px;
-    background: black;
-    color: white;
+    background: @b;
+    color: @c;
     cursor: pointer;
     transition: all 0.2s ease-in;
     &:hover{
